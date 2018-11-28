@@ -39,14 +39,15 @@
     <main role="main" class="container" style="text-align:center;">
 
         <h1>IPH 312: Pop Song Chord Analysis</h1>
-        <canvas id="myChart"></canvas>
+        <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var scatterChart = new Chart(ctx, {
     type: 'scatter',
     data: {
+        labels: ['"Bbibbi" by IU', '"Sorry" by Young Da Il', '"Hello Tutorial" by Zion. T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Haven\'t Loved You" by Im Chang Jung']
         datasets: [{
-            labels: ['“Bbibbi” by IU', '"Sorry" by Yang Da Il', '"Hello Tutorial" by Zion.T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Havent Loved You" by Im Chang Jung'],
+            label: 'Major K-Pop Chords',
             data: [{
                 x: 0.15,
                 y: 1
@@ -66,11 +67,20 @@ var scatterChart = new Chart(ctx, {
         }]
     },
     options: {
+        responsive: true;
         scales: {
             xAxes: [{
                 type: 'linear',
                 position: 'bottom'
             }]
+        }
+        tooltips: {
+           callbacks: {
+              label: function(tooltipItem, data) {
+                 var label = data.labels[tooltipItem.index];
+                 return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+              }
+           }
         }
     }
 });
