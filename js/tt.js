@@ -6,6 +6,7 @@ function tt() {
           labels: ['"Bbibbi" by IU', '"Sorry" by Young Da Il', '"Hello Tutorial" by Zion. T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Haven\'t Loved You" by Im Chang Jung', '"Good Day" by Loopy x Kid Milli x pH - 1', '"It Takes Time" by LOCO', '"Save" by Loopy', '"Every Day, Every Moment" by Paul Kim', '"Way Back Home" by SHAUN'],
           datasets: [{
              label: 'Major K-Pop Chords',
+             backgroundColor: '#4688f1',
              data: [{
                     x: 0.15,
                     y: 1
