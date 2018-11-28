@@ -42,15 +42,12 @@
         <canvas id="myChart"></canvas>
         <script>
         var ctx = document.getElementById("myChart").getContext('2d');
-        var color = Chart.helpers.color;
         var scatterChart = new Chart(ctx, {
             type: 'scatter',
            data: {
               labels: ['"Bbibbi" by IU', '"Sorry" by Young Da Il', '"Hello Tutorial" by Zion. T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Haven\'t Loved You" by Im Chang Jung'],
               datasets: [{
                  label: 'Major K-Pop Chords',
-                 borderColor: window.chartColors.red,
-				 backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
                  data: [{
                         x: 0.15,
                         y: 1
