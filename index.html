@@ -31,6 +31,25 @@
         body {
             padding:5%;
         }
+        
+        h1 {
+            margin-bottom:none;
+        }
+        
+        #buttons {
+            margin:0 auto;
+        }
+        
+        button {
+            display: inline-block;
+            text-align: center;
+            margin:7px;
+            padding: 7px;
+            text-decoration: none;
+            background-color: #555555; 
+            border: none;
+            color: white;
+        }
     </style>
 
 </head>
@@ -40,7 +59,10 @@
     <main role="main" class="container" style="text-align:center;">
 
         <h1>IPH 312: Pop Song Chord Analysis</h1>
-        <button onclick="tt()">Type Tokens</button>
+        <div id="buttons">
+            <button onclick="tt()">Type Tokens</button>
+            <button>Something Else</button>
+        </div>
         
         <canvas id="myChart"></canvas><script src="/chords/js/Chart.min.js"></script>
             
