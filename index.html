@@ -39,25 +39,31 @@
     <main role="main" class="container" style="text-align:center;">
 
         <h1>IPH 312: Pop Song Chord Analysis</h1>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart"></canvas>
         <script>
         var ctx = document.getElementById("myChart").getContext('2d');
         var scatterChart = new Chart(ctx, {
             type: 'scatter',
            data: {
-              labels: ["Label 1", "Label 2", "Label 3"],
+              labels: ['"Bbibbi" by IU', '"Sorry" by Young Da Il', '"Hello Tutorial" by Zion. T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Haven\'t Loved You" by Im Chang Jung'],
               datasets: [{
-                 label: 'Legend',
+                 label: 'Major K-Pop Chords',
                  data: [{
-                    x: -10,
-                    y: 0,
-                 }, {
-                    x: 0,
-                    y: 10
-                 }, {
-                    x: 10,
+                    x: 0.15,
+                    y: 1
+                }, {
+                    x: 0.19791666666666666,
+                    y: 2
+                }, {
+                    x: 0.3333333333333333,
+                    y: 3
+                }, {
+                    x: 0.16551724137931034,
+                    y: 4
+                }, {
+                    x: 0.21153846153846154,
                     y: 5
-                 }]
+                }]
               }]
            },
            options: {
