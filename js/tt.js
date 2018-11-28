@@ -16,8 +16,8 @@ function tt() {
           datasets: [{
              label: 'Major K-Pop Chords',
              backgroundColor: '#4688f1',
-             pointRadius: 10,
-             pointHoverRadius: 15,
+             pointRadius: 5,
+             pointHoverRadius: 8,
              data: [{x: 1, y: 0.15}, 
                     {x: 2, y: 0.19791666666666666}, 
                     {x: 3, y: 0.3333333333333333}, 
