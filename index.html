@@ -46,7 +46,7 @@ var scatterChart = new Chart(ctx, {
     type: 'scatter',
     data: {
         datasets: [{
-            label: 'Scatter Dataset',
+            labels: ['“Bbibbi” by IU', '"Sorry" by Yang Da Il', '"Hello Tutorial" by Zion.T', '"Fall in Fall" by VIBE', '"There Has Never Been A Day I Havent Loved You" by Im Chang Jung'],
             data: [{
                 x: 0.15,
                 y: 1
@@ -56,16 +56,26 @@ var scatterChart = new Chart(ctx, {
             }, {
                 x: 0.3333333333333333,
                 y: 3
+            }, {
+                x: 0.16551724137931034,
+                y: 4
+            }, {
+                x: 0.21153846153846154,
+                y: 5
             }]
         }]
     },
     options: {
-        scales: {
-            xAxes: [{
-                type: 'linear',
-                position: 'bottom'
-            }]
-        }
+        responsive: true,
+					title: {
+						display: true,
+						text: 'Tooltip Position: ' + position
+                    }
+    }
+    tooltips: {
+						position: position,
+						mode: 'index',
+						intersect: false,
     }
 });
 </script>
