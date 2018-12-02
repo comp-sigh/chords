@@ -3,7 +3,8 @@ function tt() {
     var scatterChart = new Chart(ctx, {
         type: 'scatter',
        data: {
-          labels: ['"Bbibbi" by IU', 
+          datasets: [{
+             labels: ['"Bbibbi" by IU', 
                    '"Sorry" by Young Da Il', 
                    '"Hello Tutorial" by Zion. T', 
                    '"Fall in Fall" by VIBE', 
@@ -29,7 +30,6 @@ function tt() {
                    '"Friend" by BTOB',
                    '"Travel" by BOL4'
                   ],
-          datasets: [{
              label: 'Major K-Pop Chords',
              backgroundColor: '#4688f1',
              pointRadius: 5,
