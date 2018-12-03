@@ -191,3 +191,46 @@ function kpopMajor() {
     chart.draw(data, google.charts.Bar.convertOptions(options));
     }
 }
+
+function kpopMinor() {
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Chord Progression', 'Occurences'],
+      ['VI i VI i', 27],
+      ['i VI i VI', 27],
+      ['i i i i', 15],
+      ['i v iv v', 7],
+      ['i v VI VII', 7],
+      ['v iv v i', 7],
+      ['VI VII i VI', 6],
+      ['i VI i v', 6],
+      ['v VI VII i', 6],
+      ['i III iv i', 5],
+      ['iv v i v', 4],
+      ['VI v i VI', 4],
+      ['i VI VII i', 4],
+      ['III iv i III', 4],
+      ['v i v iv', 4],
+      ['VI i v i', 4]
+    ]);
+
+    var options = {
+      chart: {
+        title: 'Occurences of Chord Progressions',
+        subtitle: '(K-Pop songs, Minor chords)',
+      },
+      bars: 'vertical',
+      vAxis: {format: 'decimal'},
+      height:450,
+      legend: {position:'top'},
+      colors: ['4688f1']
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('theChart'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+}
