@@ -2,6 +2,9 @@ function cc() {
     var div = document.getElementById("second");
     div.style.display = "inline-block";
     
+    var div2 = document.getElementById("first");
+    div2.style.width = "50%%";
+    
     var ctx = document.getElementById("myChart").getContext('2d');
     var scatterChart = new Chart(ctx, {
         type: 'scatter',
