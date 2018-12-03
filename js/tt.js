@@ -3,31 +3,7 @@ function tt() {
     var scatterChart = new Chart(ctx, {
         type: 'scatter',
        data: {
-          labels: ['"Bbibbi" by IU', 
-                   '"Sorry" by Young Da Il', 
-                   '"Hello Tutorial" by Zion. T', 
-                   '"Fall in Fall" by VIBE', 
-                   '"There Has Never Been A Day I Haven\'t Loved You" by Im Chang Jung', 
-                   '"Good Day" by Loopy x Kid Milli x pH - 1', 
-                   '"It Takes Time" by LOCO', '"Save" by Loopy', 
-                   '"Save" by Loopy',
-                   '"Every Day, Every Moment" by Paul Kim', 
-                   '"Way Back Home" by SHAUN',
-                   '"Goodbye Road" by iKON',
-                   '"The Hardest Part" by Roy Kim',
-                   '"Beautiful Moment" by K.Will',
-                   '"Siren" by Sunmi',
-                   '"Love, ing" by Ben',
-                   '"Good Bye" by Punch',
-                   '"IDOL" by BTS',
-                   '"Saim Saim" by Coogie, SUPERBEE, D.Ark',
-                   '"Falling in Love" by Davichi',
-                   '"flex" by GIRIBOY, Kid Milli, NO:EL, Swings',
-                   '"DDU-DU DDU-DU" by BLACKPINK',
-                   '"IndiGO" by JUSTHIS, Kid Milli, NO:EL, Young B',
-                   '"Shoot Out" by MONSTA X',
-                   '"Friend" by BTOB',
-                   '"Travel" by BOL4'
+          labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25'
                   ],
           datasets: [{
              label: 'Major K-Pop Chords',
