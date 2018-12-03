@@ -105,7 +105,7 @@ var scatterChart = new Chart(ctx, {
         type: 'line',
         mode: 'horizontal',
         scaleID: 'y-axis-0',
-        value: 2225,
+        value: .5,
         endValue: 0,
         borderColor: 'rgb(75, 192, 192)',
         borderWidth: 4,
