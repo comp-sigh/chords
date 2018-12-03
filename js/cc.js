@@ -99,6 +99,22 @@ var scatterChart = new Chart(ctx, {
             labelString: 'Frequency of Common Cords'
           }
         }]
-      }
+      },
+      annotation: {
+      annotations: [{
+        type: 'line',
+        mode: 'horizontal',
+        scaleID: 'y-axis-0',
+        value: 2225,
+        endValue: 0,
+        borderColor: 'rgb(75, 192, 192)',
+        borderWidth: 4,
+        label: {
+          enabled: true,
+          content: 'Trendline',
+          yAdjust: -16,
+        }
+      }]
+    }
    }
 });
