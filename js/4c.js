@@ -16,7 +16,11 @@ function popMajor() {
       chart: {
         title: 'Frequencies of Chord Progressions',
         subtitle: '(Pop songs)',
-      }
+      },
+      bars: 'vertical',
+      vAxis: {format: 'decimal'},
+      height:450,
+      colors: ['ffb3b3']
     };
 
     var chart = new google.charts.Bar(document.getElementById('theChart'));
