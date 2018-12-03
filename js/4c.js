@@ -7,22 +7,13 @@ function fourChords() {
     
     var ctx = document.getElementById("myChart").getContext('2d');
     var barChart = new Chart(ctx, {
-        type: 'bar',
-        label: '4 Chord Progression Frequencies',
-        data: { 
-            labels: [
-                'I V iii I',
-                'V iii I V',
-                'iii I V iii',
-                'IV I V vi',
-                'I V vi IV'
-            ],
-            datasets: [
-                66,
-                60,
-                57,
-                38,
-                37
-            ]}
-    });
+      type: 'bar',
+      data: {
+        labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+        datasets: [{
+            label: 'Density of Planets (kg/m3)',
+            data: [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638]
+        }]
+  }
+});
 }
