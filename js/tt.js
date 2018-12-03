@@ -27,10 +27,7 @@ function tt() {
                    '"IndiGO" by JUSTHIS, Kid Milli, NO:EL, Young B',
                    '"Shoot Out" by MONSTA X',
                    '"Friend" by BTOB',
-                   '"Travel" by BOL4',
-                   '"song" by song',
-                   'song" by song',
-                   'please work'
+                   '"Travel" by BOL4'
                   ],
           datasets: [{
              label: 'Major K-Pop Chords',
