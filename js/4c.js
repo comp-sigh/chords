@@ -1,10 +1,10 @@
-function kpopMajor() {
+function popMajor() {
     google.charts.load('current', {'packages':['bar']});
     google.charts.setOnLoadCallback(drawChart);
 
     function drawChart() {
     var data = google.visualization.arrayToDataTable([
-      ['Chord Progression', 'Frequency'],
+      ['Chord Progression', 'Occurences'],
       ['V I iii V', 79],
       ['I iii V I', 79],
       ['iii V I iii', 77],
@@ -61,12 +61,61 @@ function kpopMajor() {
 
     var options = {
       chart: {
-        title: 'Frequencies of Chord Progressions',
+        title: 'Occurences of Chord Progressions',
         subtitle: '(Pop songs, Major chords)',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
+      colors: ['ffb3b3']
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('theChart'));
+
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+}
+
+function popMinor() {
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Chord Progression', 'Occurences'],
+      ['i v i v', 27],
+      ['v i v i', 26],
+      ['III i iv III', 25],
+      ['i iv III i', 25],
+      ['iv III i iv', 25],
+      ['VI VII i III', 21],
+      ['VII i III VI', 20],
+      ['i III VI VII', 19],
+      ['VI VII i VI', 19],
+      ['III VI VII i', 18],
+      ['i VI VII i', 17],
+      ['VII i VI VII', 17],
+      ['iv i iv i', 16],
+      ['i iv i iv', 16],
+      ['III i III i', 13],
+      ['VII i VII i', 11],
+      ['i VII i VII', 11],
+      ['i III i III', 10],
+      ['VII i v III', 9],
+      ['v i III v', 8],
+      ['i v III i', 7],
+      ['i III v i', 7]
+    ]);
+
+    var options = {
+      chart: {
+        title: 'Occurences of Chord Progressions',
+        subtitle: '(Pop songs, Minor chords)',
+      },
+      bars: 'vertical',
+      vAxis: {format: 'decimal'},
+      height:450,
+      legend: {position:'top'},
       colors: ['ffb3b3']
     };
 
@@ -82,7 +131,7 @@ function kpopMajor() {
 
     function drawChart() {
     var data = google.visualization.arrayToDataTable([
-      ['Chord Progression', 'Frequency'],
+      ['Chord Progression', 'Occurences'],
       ['I V iii I', 66],
       ['V iii I V', 60],
       ['iii I V iii', 57],
@@ -127,7 +176,7 @@ function kpopMajor() {
 
     var options = {
       chart: {
-        title: 'Frequencies of Chord Progressions',
+        title: 'Occurences of Chord Progressions',
         subtitle: '(K-Pop songs, Major chords)',
       },
       bars: 'vertical',
