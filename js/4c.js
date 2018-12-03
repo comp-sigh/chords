@@ -34,7 +34,7 @@ function fourChords(labels, data, title) {
       options: {
           title: {
               display: true,
-              text: title;
+              text: title
           },
           tooltips: {
              custom: function(tooltip) {
