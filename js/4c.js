@@ -1,23 +1,26 @@
-google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+function popMajor() {
+    google.charts.load('current', {'packages':['bar']});
+    google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Year', 'Sales', 'Expenses', 'Profit'],
-  ['2014', 1000, 400, 200],
-  ['2015', 1170, 460, 250],
-  ['2016', 660, 1120, 300],
-  ['2017', 1030, 540, 350]
-]);
+    function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Chord Progression', 'Frequency'],
+      ['I V iii I', 66],
+      ['V iii I V', 60],
+      ['iii I V iii', 57],
+      ['IV I V vi', 38],
+      ['I V vi IV', 37]
+    ]);
 
-var options = {
-  chart: {
-    title: 'Company Performance',
-    subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-  }
-};
+    var options = {
+      chart: {
+        title: 'Frequencies of Chord Progressions',
+        subtitle: '(Pop songs)',
+      }
+    };
 
-var chart = new google.charts.Bar(document.getElementById('theChart'));
+    var chart = new google.charts.Bar(document.getElementById('theChart'));
 
-chart.draw(data, google.charts.Bar.convertOptions(options));
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
 }
