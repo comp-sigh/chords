@@ -44,7 +44,7 @@ function fourChords() {
              callbacks: {
                 label: function(tooltipItem, data) {
                    var label = data.labels[tooltipItem.index];
-                   return label + '\n(' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+                   return '(' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
                 }
              }
           },
