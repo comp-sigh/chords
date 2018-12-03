@@ -74,6 +74,10 @@ function tt() {
        },
        options: {
           tooltips: {
+             title: {
+              display: true,
+              text: 'Type Tokens of Pop and K-Pop Songs'
+             },
              custom: function(tooltip) {
                 if (!tooltip) return;
                 // disable displaying the color box;

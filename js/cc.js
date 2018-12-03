@@ -73,6 +73,10 @@ function cc() {
           ]}]
        },
        options: {
+          title: {
+              display: true,
+              text: 'Common Chord Frequencies of Pop and K-Pop Songs'
+          },
           tooltips: {
              custom: function(tooltip) {
                 if (!tooltip) return;
