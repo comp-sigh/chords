@@ -1,4 +1,7 @@
 function tt() {
+    var div = document.getElementById("second");
+    div.style.display = "inline-block";
+    
     var ctx = document.getElementById("myChart").getContext('2d');
     var scatterChart = new Chart(ctx, {
         type: 'scatter',
