@@ -93,6 +93,7 @@ function kpopMajor() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
+      legend: {position:'top'},
       colors: ['ffb3b3']
     };
 
