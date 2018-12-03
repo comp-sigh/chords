@@ -9,11 +9,26 @@ function fourChords() {
     var barChart = new Chart(ctx, {
       type: 'bar',
       data: {
-        labels: ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"],
+        labels: [
+            'I V iii I',
+            'V iii I V',
+            'iii I V iii',
+            'IV I V vi',
+            'I V vi IV'
+        ],
         datasets: [{
-            label: 'Density of Planets (kg/m3)',
-            data: [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638]
-        }]
-  }
+            label: '4 Chord Progression Frequencies)',
+            data: [
+                66,
+                60,
+                57,
+                38,
+                37
+            ]
+        }],
+        borderWidth: 1,
+        backgroundColor: '#b3b3ff',
+        borderColor: '#6666ff'
+      }
 });
 }
