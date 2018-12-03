@@ -112,7 +112,7 @@ var scatterChart = new Chart(ctx, {
         label: {
           enabled: true,
           content: 'Trendline',
-          yAdjust: -16,
+          yAdjust: -.1,
         }
       }]
     }
