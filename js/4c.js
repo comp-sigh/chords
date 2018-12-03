@@ -2,7 +2,7 @@ function fourChords() {
     var div = document.getElementById("second");
     div.style.display = "none";
     
-    var div2 = document.getElementsByClassName("list");
+    var div2 = document.getElementsByIdName("first");
     div2.style.width = "100%";
     
     var ctx = document.getElementById("myChart").getContext('2d');
