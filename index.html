@@ -62,12 +62,9 @@
             transition: all .3s ease-in-out;
         }
         
-        #myChart {
-            display:inline-block;
-        }
-        
-        .list {
-            display:inline-block;
+        .half{
+            width:50%;
+            position:relative;
         }
     </style>
 
@@ -83,9 +80,9 @@
             <button>Something Else</button>
         </div>
         
-        <canvas id="myChart" width="600px"></canvas>
+        <div class="half"><canvas id="myChart"></canvas></div>
         
-        <div class="list">sadness</div>
+        <div class="half">sadness</div>
             
     </main>
     
