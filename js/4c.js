@@ -186,7 +186,7 @@ function kpopMajor() {
       colors: ['4688f1']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('theChart'));
+    var chart = new google.charts.Bar(document.getElementById('otherChart'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
     }
@@ -229,7 +229,7 @@ function kpopMinor() {
       colors: ['4688f1']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('theChart'));
+    var chart = new google.charts.Bar(document.getElementById('otherChart'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
     }
