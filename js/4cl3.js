@@ -112,6 +112,7 @@ function drawPM() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
+      legend: {position:'none'},
       colors: ['ffb3b3']
     };
 
@@ -159,7 +160,7 @@ function drawPMi() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['ffb3b3']
     };
 
@@ -224,7 +225,7 @@ function drawKM() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['4688f1']
     };
 
@@ -265,7 +266,7 @@ function drawKMi() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['4688f1']
     };
 

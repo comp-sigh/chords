@@ -67,6 +67,7 @@ function popMajor() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
+      legend: {position:'none'},
       colors: ['ffb3b3']
     };
 
@@ -115,7 +116,7 @@ function popMinor() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['ffb3b3']
     };
 
@@ -182,7 +183,7 @@ function kpopMajor() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['4688f1']
     };
 
@@ -225,7 +226,7 @@ function kpopMinor() {
       bars: 'vertical',
       vAxis: {format: 'decimal'},
       height:450,
-      legend: {position:'top'},
+      legend: {position:'none'},
       colors: ['4688f1']
     };
 
