@@ -1,7 +1,7 @@
 google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawPM);
 
-function drawChart() {
+function drawPM() {
     var data = google.visualization.arrayToDataTable([
         ['Chord Progression', 'Occurences'],
         ['vi V ii vi', 3],
@@ -122,9 +122,9 @@ function drawChart() {
 
 
 google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawPMi);
 
-function drawChart() {
+function drawPMi() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['i v i v', 27],
@@ -169,9 +169,9 @@ function drawChart() {
 }
 
 google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawKM);
 
-function drawChart() {
+function drawKM() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['I V iii I', 66],
@@ -234,9 +234,9 @@ function drawChart() {
 }
 
 google.charts.load('current', {'packages':['bar']});
-google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(drawKMi);
 
-function drawChart() {
+function drawKMi() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['VI i VI i', 27],
