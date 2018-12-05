@@ -106,8 +106,8 @@ function drawPM() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(Pop songs, Major chords That Appear Less Than 4 Times)',
+        title: 'Occurences of Rare Major 4-Chord Progressions in Pop Songs',
+        subtitle: 'Chord Progressions That Appear ≤ 3 Times',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -154,8 +154,8 @@ function drawPMi() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(Pop songs, Minor chords That Appear Less Than 4 Times)',
+        title: 'Occurences of Rare Minor 4-Chord Progressions in Pop Songs',
+        subtitle: 'Chord Progressions That Appear ≤ 3 Times',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -219,8 +219,8 @@ function drawKM() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(K-Pop songs, Major chords That Appear Less Than 4 Times)',
+        title: 'Occurences of Rare Major 4-Chord Progressions in K-Pop Songs',
+        subtitle: 'Chord Progressions That Appear ≤ 3 Times',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -260,8 +260,8 @@ function drawKMi() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(K-Pop songs, Minor chords That Appear Less Than 4 Times)',
+        title: 'Occurences of Rare Minor 4-Chord Progressions in K-Pop Songs',
+        subtitle: 'Chord Progressions That Appear ≤ 3 Times',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},

@@ -61,8 +61,7 @@ function popMajor() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(Pop songs, Major chords)',
+        title: 'Occurences of Common Major 4-Chord Progressions in Pop Songs',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -110,8 +109,7 @@ function popMinor() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(Pop songs, Minor chords)',
+        title: 'Occurences of Common Minor 4-Chord Progressions in Pop Songs',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -177,8 +175,7 @@ function kpopMajor() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(K-Pop songs, Major chords)',
+        title: 'Occurences of Common Major 4-Chord Progressions in K-Pop Songs',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
@@ -220,8 +217,7 @@ function kpopMinor() {
 
     var options = {
       chart: {
-        title: 'Occurences of Chord Progressions',
-        subtitle: '(K-Pop songs, Minor chords)',
+        title: 'Occurences of Common Minor 4-Chord Progressions in K-Pop Songs',
       },
       bars: 'vertical',
       vAxis: {format: 'decimal'},
