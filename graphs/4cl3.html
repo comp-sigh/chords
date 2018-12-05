@@ -63,11 +63,7 @@
             transition: all .3s ease-in-out;
         }
         
-        #theChart {
-            width:10%;
-        }
-        
-        #otherChart {
+        .chart {
             width:100%;
         }
     </style>
@@ -97,8 +93,10 @@
             <button onclick="kpopMinor()">K-Pop Minor</button>
         </div>
         
-        <div id="theChart"></div>
-        <div id="otherChart"></div>
+        <div id="popMajor" class="chart"></div>
+        <div id="popMinor" class="chart"></div>
+        <div id="kpopMajor" class="chart"></div>
+        <div id="kpopMinor" class="chart"></div>
             
     </main>
     

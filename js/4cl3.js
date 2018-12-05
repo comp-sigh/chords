@@ -1,8 +1,7 @@
-function popMajor() {
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+function drawChart() {
     var data = google.visualization.arrayToDataTable([
         ['Chord Progression', 'Occurences'],
         ['vi V ii vi', 3],
@@ -116,17 +115,16 @@ function popMajor() {
       colors: ['ffb3b3']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('theChart'));
+    var chart = new google.charts.Bar(document.getElementById('popMajor'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
 }
 
-function popMinor() {
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['i v i v', 27],
@@ -165,17 +163,15 @@ function popMinor() {
       colors: ['ffb3b3']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('theChart'));
+    var chart = new google.charts.Bar(document.getElementById('popMinor'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
 }
 
-function kpopMajor() {
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+function drawChart() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['I V iii I', 66],
@@ -232,17 +228,15 @@ function kpopMajor() {
       colors: ['4688f1']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('otherChart'));
+    var chart = new google.charts.Bar(document.getElementById('kpopMajor'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
 }
 
-function kpopMinor() {
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawChart);
+google.charts.load('current', {'packages':['bar']});
+google.charts.setOnLoadCallback(drawChart);
 
-    function drawChart() {
+function drawChart() {
     var data = google.visualization.arrayToDataTable([
       ['Chord Progression', 'Occurences'],
       ['VI i VI i', 27],
@@ -275,8 +269,7 @@ function kpopMinor() {
       colors: ['4688f1']
     };
 
-    var chart = new google.charts.Bar(document.getElementById('otherChart'));
+    var chart = new google.charts.Bar(document.getElementById('kpopMinor'));
 
     chart.draw(data, google.charts.Bar.convertOptions(options));
-    }
 }
